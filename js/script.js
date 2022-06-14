@@ -138,12 +138,12 @@ let numbers=[2,3,4,5,5,67,787,6,4];
 /*numbers=[3,6,9,36,51,54,15];*/
 
 let sum=numbers.reduce((a,b)=>a+b);
-console.log(sum);
+
 let product=numbers.reduce((a,b)=>a*b);
-console.log(product);
+
 function equlize(){
  let numbersCanDivide=numbers.filter(item=> item%3==0);
- console.log(numbersCanDivide);
+ 
  if((numbers.length==numbersCanDivide.length)&&(sum%3==0))/* !$! (условие что сумма делиться на 3) !$!*/{
     console.log('sum can be divided');
     console.log(sum/3);
